@@ -1,4 +1,3 @@
-<!-- views/index.ejs -->
 <%- include('partials/header', { title: 'Home - My Blog' }) %>
 
 <h1 class="">All Posts</h1>
@@ -10,8 +9,8 @@
             <li class="list-group-item">
                 <h2><%= post.title %></h2>
                 <p><%= post.content %></p>
-                <a href="/edit/<%= index %>" class="btn btn-primary">Edit</a>
-                <form action="/delete/<%= index %>" method="POST" class="d-inline">
+                <a href="/edit/<%= post.id %>" class="btn btn-primary">Edit</a>
+                <form action="/posts/<%= post.id %>/delete" method="POST" class="d-inline">
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
             </li>
@@ -20,6 +19,5 @@
 <% } else { %>
     <p>No posts yet. Create one using the form below!</p>
 <% } %>
-
 
 <%- include('partials/footer') %>
