@@ -1,0 +1,73 @@
+/* views/public/css/styles.css */
+
+body {
+    background-color: #121212; /* Dark background */
+    color: #d4d4d4; /* Soft gray text */
+    font-family: 'Exo 2', sans-serif;
+}
+
+.navbar {
+    background-color: #1a1a1a; /* Slightly lighter for contrast */
+    border-bottom: 1px solid #444; /* Subtle border */
+}
+
+.navbar-brand, .nav-link {
+    color: #8a8aff !important; /* Muted neon purple links */
+}
+
+.nav-link:hover {
+    color: #c1c1ff !important; /* Slightly brighter on hover */
+}
+
+.container {
+    background-color: #1e1e1e; /* Dark gray container */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(138, 138, 255, 0.2); /* Very subtle glow */
+}
+
+h1, h2 {
+    color: #c1c1ff;
+    text-shadow: 0px 0px 5px rgba(138, 138, 255, 0.2); /* Soft glow */
+}
+
+button, .btn {
+    background-color: #2a2a2a;
+    color: #8a8aff;
+    border: 1px solid #8a8aff;
+    transition: all 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #8a8aff;
+    color: #2a2a2a;
+}
+
+.list-group-item {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #c1c1ff;
+}
+
+form input, form textarea {
+    background-color: #1e1e1e;
+    color: #c1c1ff;
+    border: 1px solid #8a8aff;
+    border-radius: 5px;
+    transition: border-color 0.2s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #c1c1ff;
+}
+body {
+    background: #121212 url('/path-to-subtle-texture.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.navbar {
+    background-color: #1a1a1a; /* Dark background for the header */
+    border-bottom: 1px solid #444; /* Optional: subtle bottom border */
+}
+.navbar-brand, .nav-link {
+    color: #c1c1ff !important; /* Light text color for better contrast against dark background */
+}

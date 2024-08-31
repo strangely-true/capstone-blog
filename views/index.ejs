@@ -1,7 +1,7 @@
 <!-- views/index.ejs -->
 <%- include('partials/header', { title: 'Home - My Blog' }) %>
 
-<h1 class="mb-4">All Posts</h1>
+<h1 class="">All Posts</h1>
 
 <!-- Display all blog posts -->
 <% if (posts.length > 0) { %>
@@ -21,18 +21,5 @@
     <p>No posts yet. Create one using the form below!</p>
 <% } %>
 
-<!-- Form to create a new post -->
-<h2 class="mt-4">Create a New Post</h2>
-<form action="/new-post" method="POST">
-    <div class="mb-3">
-        <label for="title" class="form-label">Title</label>
-        <input type="text" class="form-control" id="title" name="title" required>
-    </div>
-    <div class="mb-3">
-        <label for="content" class="form-label">Content</label>
-        <textarea class="form-control" id="content" name="content" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-success">Create Post</button>
-</form>
 
 <%- include('partials/footer') %>
